@@ -41,7 +41,7 @@ jobs:
     needs: setup_and_auth
     uses: apatilgtn/apigeex-proxy-ci-cd-main/.github/workflows/Reusable-proxy-deploy.yml@main
     with:
-      proxy_name: 'WeatherForecastAPI'
+      proxy_name: 'LM-proxy'
       dev_env: 'dev'
       test_env: 'test'
       uat_env: 'uat'
