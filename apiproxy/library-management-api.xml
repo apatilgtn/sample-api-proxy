@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="library-management-api">
+    <Description>API for managing library operations</Description>
+    <DisplayName>Library Management API</DisplayName>
+    <Policies>
+        <Policy>Verify-API-Key</Policy>
+        <Policy>Remove-Query-Param-API-Key</Policy>
+        <Policy>Quota</Policy>
+        <Policy>JSON-to-XML</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://LoginScript.js</Resource>
+    </Resources>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
