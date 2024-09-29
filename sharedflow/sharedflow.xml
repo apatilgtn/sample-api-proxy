@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<SharedFlowBundle revision="1" name="library-common-flow">
-    <DisplayName>Library Common Flow</DisplayName>
-    <Description>Shared flow for library operations</Description>
-    <Policies>
-        <Policy>Log-Request</Policy>
-        <Policy>Check-Cache</Policy>
-    </Policies>
-</SharedFlowBundle>
