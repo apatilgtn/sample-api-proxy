@@ -1,0 +1,63 @@
+name: library-common-flow
+displayName: Library Common Flow
+description: Shared flow for library operations
+resources:
+  - type: policy
+    name: Log-Request
+  - type: policy
+    name: Check-Cache
+  - type: resource
+    name: shared-response.xml
+
+# products/product-details.json
+{
+  "name": "library-management-product",
+  "displayName": "Library Management API Product",
+  "approvalType": "auto",
+  "attributes": [
+    {
+      "name": "access",
+      "value": "internal"
+    }
+  ],
+  "description": "Product for Library Management API",
+  "apiResources": [
+    "/books",
+    "/borrowers",
+    "/loans"
+  ],
+  "environments": [
+    "test",
+    "prod"
+  ],
+  "proxies": [
+    "library-management-api"
+  ],
+  "quota": "10000",
+  "quotaInterval": "1",
+  "quotaTimeUnit": "month"
+}
+
+# apps/app-details.json
+{
+  "name": "LibraryManagementApp",
+  "status": "approved",
+  "attributes": [
+    {
+      "name": "DisplayName",
+      "value": "Library Management Application"
+    },
+    {
+      "name": "Department",
+      "value": "IT"
+    }
+  ],
+  "credentials": [
+    {
+      "consumerKey": "lib123456789abcdef",
+      "consumerSecret": "libSecret987654321",
+      "expiresAt": -1
+    }
+  ],
+  "developerId": "librarian@example.com"
+}
