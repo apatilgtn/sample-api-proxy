@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessageLogging name="Log-Request" continueOnError="false" enabled="true" async="false">
+    <DisplayName>Log Request</DisplayName>
+    <Properties/>
+    <Syslog>
+        <Message>[REQUEST] {request.verb} {request.uri}</Message>
+        <Host>logs.example.com</Host>
+        <Port>514</Port>
+        <FormatMessage>true</FormatMessage>
+    </Syslog>
+</MessageLogging>
