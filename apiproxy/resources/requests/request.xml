@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<library-request>
-    <operation>{request.queryparam.operation}</operation>
-    <data>
-        {request.content}
-    </data>
-</library-request>

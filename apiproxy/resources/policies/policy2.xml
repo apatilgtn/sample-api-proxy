@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<SpikeArrest async="false" continueOnError="false" enabled="true" name="Rate-Limit">
-    <DisplayName>Rate Limit</DisplayName>
-    <Properties/>
-    <Identifier ref="request.header.x-forwarded-for"/>
-    <MessageWeight ref="request.header.content-length"/>
-    <Rate>10ps</Rate>
-</SpikeArrest>
